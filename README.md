@@ -10,8 +10,9 @@ git clone https://github.com/Ccaris2016/app-examen.git app-examen
 
 cd app-examen && npm install && ionic serve
 ```
-(*) Recurde tener instaldo node-js (*)
-(*) Si en el ultimo comando le da algun tipo de error ejecutelos de manera separara (*)
+* Recurde tener instaldo node-js
+
+* Si en el ultimo comando le da algun tipo de error ejecutelos de manera separara
 
 para este punto al ejecutar ionic serve se abrira en el navegador con el contenido de la app, sin embargo de no hacerlo, la pagina se puede ver en localhost:8100.
 
