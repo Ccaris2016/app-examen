@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Tienes una duda chatea con nosotos
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,30 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Tienes una duda chatea con nosotos</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div style="overflow: y; height:20px;">
+    <div *ngFor = "let message of chat">
+      <div *ngIf = "message.user == 2">
+        <ion-card style="width: 50%;">
+          <ion-card-content>
+            {{message.chat}}
+          </ion-card-content>
+        </ion-card>
+      </div> 
+      <div *ngIf = "message.user == 1">
+        <ion-card style="position: relative;left: 49%; width: 50%;">
+          <ion-card-content>
+            {{message.chat}}
+          </ion-card-content>
+        </ion-card>
+      </div> 
+    </div>
+  </div>
+  <ion-item style="position: relative;top: 75%;">
+    <ion-label position="floating">Escribir</ion-label>
+    <ion-input [value] = "newchat" (keyup.enter)= "onEnter($event)"><ion-icon name="send-outline" style="position: relative;left: 95%;"></ion-icon></ion-input>
+  </ion-item>
 </ion-content>
