@@ -4,11 +4,11 @@
 
 En una consola apuntando a la carpeta en donde desee alojar el proeycto ejecute en orden:
 ```
-npm install -g @ionic/cli cordova-res (Para esto debemos tener instalado node-js)
+npm install -g @ionic/cli cordova-res
 
 git clone https://github.com/Ccaris2016/app-examen.git app-examen
 
-cd app-examen && npm install && ionic serve (estos comandos si no puede ingresalos en conjunto, se recomienda ingresarlos uno a uno)
+cd app-examen && npm install && ionic serve
 ```
 para este punto al ejecutar ionic serve se abrira en el navegador con el contenido de la app, sin embargo de no hacerlo, la pagina se puede ver en localhost:8100.
 
